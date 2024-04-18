@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Quiz Rawaa'" />
+    <meta name="keywords" content="HTML, CSS" />
+    <meta name="author" content="Bodour Alshami" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500i,700,900i" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <span onclick="toggleDirection()" id="lng">En</span>
+    </div>
+    <div class="form-container d-flex">
+      <div class="form-holder">
+        <div class="login-header">
+          <h1 class="main-title">LOGIN</h1>
+          <div class="main-description">
+            How to i get started lorem ipsum dolor at?
+          </div>
+        </div>
+        <div class="login-form">
+          <form name="login" action="#">
+            <input type="username" name="username" class="round-16" placeholder="username" />
+            <input type="password" name="password" class="round-16" placeholder="password" />
+            <input type="submit" name="login" value="Login Now" class="submit-btn boton round-16" />
+          </form>
+          <div class="or">
+            <div class="login-with-other">
+              <strong>Login</strong> with Others
+            </div>
+          </div>
+          <a href="#" class="login-with-social d-flex round-16">
+            <img src="img/google.svg" class="icon" />
+            Login with <strong>&nbsp; google</strong>
+          </a>
+          <a href="#" class="login-with-social d-flex round-16">
+            <img src="img/fb.svg" class="icon" />
+            Login with <strong>&nbsp; Facebook</strong>
+          </a>
+        </div>
+      </div>
+      
+      <div class="image-holder">
+        <div class="right-content">
+          <div class="text">
+            <h2>Very good works are waiting for you Login Now!!!</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function toggleDirection() {
+        let body = document.querySelector("body");
+        let lng = document.getElementById("lng");
+        lng.innerHTML = lng.innerHTML == "En" ? "Ar" : "En";
+        body.classList.toggle("is-rtl");
+      }
+    </script>
+
+  </body>
+</html>
